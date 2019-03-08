@@ -11,16 +11,18 @@ import ChargeBack from './pages/ChargeBack';
 import Dispatch from './pages/Dispatch';
 import Goods from './pages/Goods';
 import AddOrder from './pages/AddOrder';
+import Page11 from './pages/Page11';
+import BasicLayout from './layouts/BasicLayout';
 import AddGoods from './pages/AddGoods';
 
 const routerConfig = [
   {
-    path: '/user/login',
-    component: UserLogin,
+    path: '/chargeback',
+    component: ChargeBack,
   },
   {
-    path: '/user/register',
-    component: UserRegister,
+    path: '/user/login',
+    component: UserLogin,
   },
   {
     path: '/dashboard',
@@ -35,8 +37,8 @@ const routerConfig = [
     component: OrderList,
   },
   {
-    path: '/chargeback',
-    component: ChargeBack,
+    path: '/user/register',
+    component: UserRegister,
   },
   {
     path: '/dispatch',
@@ -53,6 +55,11 @@ const routerConfig = [
   {
     path: '/add/goods',
     component: AddGoods,
+  },
+  {
+    path: '/page11',
+    layout: BasicLayout,
+    component: Page11,
   },
 ];
 
